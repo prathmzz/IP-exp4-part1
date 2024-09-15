@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Details</title>
+    <script src="dellivery.js" defer></script> <!-- Linking to external JS file -->
+</head>
+<body>
+    <center>
+    <section>
+        <form onsubmit="return validateDeliveryForm()">
+            <h1>Dellivery Details</h1>
+            <hr>
+            <input type="text" id="name" placeholder="Enter your name" pattern="[A-Za-z\s]{2,50}" required> 
+            <br>
+            <input type="text" id="phone" placeholder="Enter your phone number" pattern="\d{10}" required> 
+            <br>
+            <input type="text" id="address" placeholder="Enter your address" required> 
+            <br>
+            <textarea placeholder="Add your special instructions here..." id="instructions"></textarea> 
+            <br>
+            <input type="checkbox" id="terms"> I accept all terms and conditions.
+            <br>
+            <button type="submit">Send Delivery</button>
+        </form>
+    </section>
+</center>
+
+    <section id="receipt">
+        <!-- Receipt will be displayed here -->
+    </section>
+</body>
+</html>

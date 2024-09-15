@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Souled Store</title>
+    <script src="index.js" defer></script>
+    <!-- Linking to external JS file -->
+  </head>
+  <body>
+    <center>
+      <nav>
+        <div><h2>Prathmzz Store</h2></div>
+      </nav>
+
+      <section>
+        <form method="get" onsubmit="return validateForm()">
+          <p>Get your Customized T-Shirts</p>
+          <hr />
+
+          <label>Tagline : </label>
+          <input
+            type="text"
+            id="tagline"
+            placeholder="Enter tagline"
+            required
+          />
+          <br />
+
+          <label>Select a color : </label>
+          <select>
+            <option>Red</option>
+            <option>Yellow</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Violet</option>
+          </select>
+          <br />
+
+          <label>Select your size : </label>
+          <select>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+          <br />
+
+          <label>Quantity : </label>
+          <input
+            type="number"
+            id="quantity"
+            placeholder="Enter quantity you wish to order"
+            min="0"
+            required
+          />
+          <br />
+
+          <label>Select Delivery Date : </label>
+          <input type="date" required />
+          <br />
+
+          <button type="submit"><a href="delivery.html">Next</a></button>
+        </form>
+      </section>
+    </center>
+  </body>
+</html>
