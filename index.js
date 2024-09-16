@@ -16,5 +16,28 @@ function validateForm() {
         return false;
     }
 
-    return true;
+    // Color validation
+    const color = document.getElementById("color").value;
+    if (!color) {
+        alert("Please select a color.");
+        return false;
+    }
+
+    // Size validation
+    const size = document.getElementById("size").value;
+    if (!size) {
+        alert("Please select a size.");
+        return false;
+    }
+
+    // Delivery date validation
+    const deliveryDate = document.getElementById("deliveryDate").value;
+    if (!deliveryDate) {
+        alert("Please select a delivery date.");
+        return false;
+    }
+
+    // Form validation passed, redirect to next page
+    window.location.href = "delivery.html";
+    return false; // Prevent default form submission
 }
