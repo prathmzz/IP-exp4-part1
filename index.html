@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Souled Store</title>
     <script src="index.js" defer></script>
-    <!-- Linking to external JS file -->
-  </head>
-  <body>
+</head>
+<body>
     <center>
-      <nav>
-        <div><h2>Prathmzz Store</h2></div>
-      </nav>
+        <nav>
+            <div><h2>Prathmzz Store</h2></div>
+        </nav>
 
-      <section>
-        <form method="get" onsubmit="return validateForm()">
-          <p>Get your Customized T-Shirts</p>
-          <hr />
+        <section>
+            <form id="customizeForm" method="get" onsubmit="return validateForm()">
+                <p>Get your Customized T-Shirts</p>
+                <hr />
 
-          <label>Tagline : </label>
-          <input
-            type="text"
-            id="tagline"
-            placeholder="Enter tagline"
-            required
-          />
-          <br />
+                <label>Tagline: </label>
+                <input
+                    type="text"
+                    id="tagline"
+                    placeholder="Enter tagline"
+                    required
+                />
+                <br />
 
-          <label>Select a color : </label>
-          <select>
-            <option>Red</option>
-            <option>Yellow</option>
-            <option>Blue</option>
-            <option>Green</option>
-            <option>Violet</option>
-          </select>
-          <br />
+                <label>Select a color: </label>
+                <select id="color" name="color" required>
+                    <option value="">Select a color</option>
+                    <option value="Red">Red</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Violet">Violet</option>
+                </select>
+                <br />
 
-          <label>Select your size : </label>
-          <select>
-            <option>XS</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-            <option>XXL</option>
-          </select>
-          <br />
+                <label>Select your size: </label>
+                <select id="size" name="size" required>
+                    <option value="">Select your size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                <br />
 
-          <label>Quantity : </label>
-          <input
-            type="number"
-            id="quantity"
-            placeholder="Enter quantity you wish to order"
-            min="0"
-            required
-          />
-          <br />
+                <label>Quantity: </label>
+                <input
+                    type="number"
+                    id="quantity"
+                    placeholder="Enter quantity you wish to order"
+                    min="1"
+                    required
+                />
+                <br />
 
-          <label>Select Delivery Date : </label>
-          <input type="date" required />
-          <br />
+                <label>Select Delivery Date: </label>
+                <input type="date" id="deliveryDate" required />
+                <br />
 
-          <button type="submit"><a href="delivery.html">Next</a></button>
-        </form>
-      </section>
+                <button type="submit">Next</button>
+            </form>
+        </section>
     </center>
-  </body>
+</body>
 </html>
